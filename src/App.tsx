@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Download, Brain, Code, Award, Smartphone, BookOpen, MessageSquare, GamepadIcon, Bot } from 'lucide-react';
+import snapAutismImg from './assets/sacx.jpg'
+import floorPlanImg from './assets/Floor-lan.png'
 
 function App() {
   const [activeTab, setActiveTab] = useState('all');
@@ -141,7 +143,7 @@ function App() {
               className="bg-gray-900 rounded-lg overflow-hidden"
             >
               <img 
-                src="/public/sacx.jpg" 
+                src={snapAutismImg}
                 alt="SnapAutism App" 
                 className="w-full h-48 object-cover"
               />
@@ -170,7 +172,7 @@ function App() {
               className="bg-gray-900 rounded-lg overflow-hidden"
             >
               <img 
-                src="/public/Floor-lan.png" 
+                src={floorPlanImg} 
                 alt="Floor Plan Generator" 
                 className="w-full h-48 object-cover"
               />
