@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Download, Brain, Code, Award, Smartphone, BookOpen, MessageSquare, GamepadIcon, Bot } from 'lucide-react';
-import snapAutismImg from './assets/sacx.jpg'
-import floorPlanImg from './assets/Floor-lan.png'
+import snapAutismImg from '../public/logo-playstore.png'
+import floorPlanImg from '../public/floor-lan.png'
 
 function App() {
   const [activeTab, setActiveTab] = useState('all');
