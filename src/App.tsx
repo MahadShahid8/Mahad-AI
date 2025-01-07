@@ -9,11 +9,6 @@ function App() {
 
   const certificates = [
     {
-      title: "Generative AI with LLMs",
-      description: "Deep dive into transformer architecture, usage and practical applications",
-      icon: <Bot className="w-8 h-8" />
-    },
-    {
       title: "Machine Learning Specialization",
       description: "Applied mathematics behind Machine Learning algorithms",
       icon: <Brain className="w-8 h-8" />
@@ -22,11 +17,6 @@ function App() {
       title: "TensorFlow Developer",
       description: "Technical skills in CNNs and RNNs via TensorFlow",
       icon: <Code className="w-8 h-8" />
-    },
-    {
-      title: "GANs Specialization",
-      description: "Mastery in GAN architecture, DCGANs and StyleGAN",
-      icon: <Award className="w-8 h-8" />
     }
   ];
 
@@ -134,89 +124,194 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-gray-800">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <motion.div 
-              whileHover={{ scale: 1.02 }}
-              className="bg-gray-900 rounded-lg overflow-hidden"
-            >
-              <img 
-                src={snapAutismImg}
-                alt="SnapAutism App" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">SnapAutism</h3>
-                <p className="text-gray-300 mb-4">
-                  A comprehensive mobile application for autism detection using AI algorithms. Features include:
-                </p>
-                <ul className="list-disc list-inside text-gray-400 mb-4">
-                  <li>AI-powered autism detection using Logistic Regression</li>
-                  <li>Direct consultation with registered psychologists</li>
-                  <li>Interactive games using Google Mediapipe</li>
-                  <li>Community forums and live chat support</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">React Native</span>
-                  <span className="px-3 py-1 bg-green-600 rounded-full text-sm">Node.js</span>
-                  <span className="px-3 py-1 bg-purple-600 rounded-full text-sm">Flask</span>
-                  <span className="px-3 py-1 bg-red-600 rounded-full text-sm">Machine Learning</span>
-                </div>
+<section className="py-20 bg-gray-800">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <motion.div 
+        whileHover={{ scale: 1.02 }}
+        className="bg-gray-900 rounded-lg overflow-hidden"
+      >
+        <div className="p-6">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex-1">
+                <img 
+                  src="/snapautism-1.png" 
+                  alt="SnapAutism Platform Screenshot" 
+                  className="w-full h-full object-contain rounded-lg shadow-lg"
+                />
               </div>
-            </motion.div>
-
-            <motion.div 
-              whileHover={{ scale: 1.02 }}
-              className="bg-gray-900 rounded-lg overflow-hidden"
-            >
-              <img 
-                src={floorPlanImg} 
-                alt="Floor Plan Generator" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">AI Floor Plan Generator</h3>
-                <p className="text-gray-300 mb-4">
-                  Advanced AI-powered floor plan generation project for the Saudi government.
-                </p>
-                <ul className="list-disc list-inside text-gray-400 mb-4">
-                  <li>Fine-tuned Stable Diffusion model</li>
-                  <li>Advanced VAE implementation</li>
-                  <li>Web scraping for training data</li>
-                  <li>Text-to-image generation pipeline</li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Python</span>
-                  <span className="px-3 py-1 bg-green-600 rounded-full text-sm">Stable Diffusion</span>
-                  <span className="px-3 py-1 bg-purple-600 rounded-full text-sm">PyTorch</span>
-                  <span className="px-3 py-1 bg-red-600 rounded-full text-sm">Deep Learning</span>
-                </div>
+              <div className="flex-1">
+                <img 
+                  src="/snapautism-2.png" 
+                  alt="SnapAutism Interface Screenshot" 
+                  className="w-full h-full object-contain rounded-lg shadow-lg"
+                />
               </div>
-            </motion.div>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-semibold">SnapAutism</h3>
+                <a 
+                  href="https://apps.apple.com/sa/app/snapautism/id6739850676?platform=iphone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <img 
+                    src="/app-store-badge.png" 
+                    alt="Get it on App Store" 
+                    className="w-32 h-auto object-contain hover:scale-105 transition-transform"
+                  />
+                </a>
+              </div>
+              <p className="text-gray-300">
+                A comprehensive mobile application for autism detection using AI algorithms. Features include:
+              </p>
+              <ul className="list-disc list-inside text-gray-400 space-y-2">
+                <li>AI-powered autism detection using Logistic Regression</li>
+                <li>Direct consultation with registered psychologists</li>
+                <li>Interactive games using Google Mediapipe</li>
+                <li>Community forums and live chat support</li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mt-4">
+                <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">React Native</span>
+                <span className="px-3 py-1 bg-green-600 rounded-full text-sm">Node.js</span>
+                <span className="px-3 py-1 bg-purple-600 rounded-full text-sm">Flask</span>
+                <span className="px-3 py-1 bg-red-600 rounded-full text-sm">Machine Learning</span>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </motion.div>
+
+      <motion.div 
+        whileHover={{ scale: 1.02 }}
+        className="bg-gray-900 rounded-lg overflow-hidden"
+      >
+        <div className="p-6">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex-1">
+                <img 
+                  src="/floorplan-1.png" 
+                  alt="Floor Plan Generator Example 1" 
+                  className="w-full h-full object-contain rounded-lg shadow-lg"
+                />
+              </div>
+              <div className="flex-1">
+                <img 
+                  src="/floorplan-2.png" 
+                  alt="Floor Plan Generator Example 2" 
+                  className="w-full h-full object-contain rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+            
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-semibold">AI Floor Plan Generator</h3>
+              </div>
+              <p className="text-gray-300">
+                Advanced AI-powered floor plan generation project for the Saudi government. Features include:
+              </p>
+              <ul className="list-disc list-inside text-gray-400 space-y-2">
+                <li>Fine-tuned Stable Diffusion model</li>
+                <li>Advanced VAE implementation</li>
+                <li>Web scraping for training data</li>
+                <li>Text-to-image generation pipeline</li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mt-4">
+                <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Python</span>
+                <span className="px-3 py-1 bg-green-600 rounded-full text-sm">Stable Diffusion</span>
+                <span className="px-3 py-1 bg-purple-600 rounded-full text-sm">PyTorch</span>
+                <span className="px-3 py-1 bg-red-600 rounded-full text-sm">Deep Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</section>
 
       {/* Certificates Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center">Certifications</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {certificates.map((cert, index) => (
-              <motion.div 
-                key={index}
-                whileHover={{ scale: 1.05 }}
-                className="p-6 bg-gray-800 rounded-lg"
-              >
-                <div className="text-blue-500 mb-4">
-                  {cert.icon}
+          <div className="grid grid-cols-1 gap-12">
+            {/* TensorFlow Developer Certificate */}
+            <motion.div 
+              whileHover={{ scale: 1.02 }}
+              className="bg-gray-800 rounded-lg overflow-hidden"
+            >
+              <div className="p-6">
+                <div className="flex flex-col md:flex-row gap-8">
+                  <div className="flex-1">
+                    <div className="text-blue-500 mb-4">
+                      <Code className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">TensorFlow Developer</h3>
+                    <p className="text-gray-400 mb-4">Technical skills in CNNs and RNNs via TensorFlow</p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Deep Learning</span>
+                      <span className="px-3 py-1 bg-green-600 rounded-full text-sm">CNNs</span>
+                      <span className="px-3 py-1 bg-purple-600 rounded-full text-sm">RNNs</span>
+                      <span className="px-3 py-1 bg-red-600 rounded-full text-sm">Computer Vision</span>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <a href="https://coursera.org/verify/professional-cert/AW97R7RLEF5S" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       className="block hover:opacity-90 transition-opacity">
+                      <img 
+                        src="/tensorflow-cert.png" 
+                        alt="TensorFlow Developer Certificate" 
+                        className="w-full rounded-lg shadow-lg"
+                      />
+                    </a>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
-                <p className="text-gray-400">{cert.description}</p>
-              </motion.div>
-            ))}
+              </div>
+            </motion.div>
+
+            {/* Machine Learning Specialization */}
+            <motion.div 
+              whileHover={{ scale: 1.02 }}
+              className="bg-gray-800 rounded-lg overflow-hidden"
+            >
+              <div className="p-6">
+                <div className="flex flex-col md:flex-row gap-8">
+                  <div className="flex-1">
+                    <div className="text-blue-500 mb-4">
+                      <Brain className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">Machine Learning Specialization</h3>
+                    <p className="text-gray-400 mb-4">Applied mathematics behind Machine Learning algorithms</p>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-blue-600 rounded-full text-sm">Supervised Learning</span>
+                      <span className="px-3 py-1 bg-green-600 rounded-full text-sm">Unsupervised Learning</span>
+                      <span className="px-3 py-1 bg-purple-600 rounded-full text-sm">Reinforcement Learning</span>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <a href="https://coursera.org/verify/specialization/8DEYMKTD44PM" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       className="block hover:opacity-90 transition-opacity">
+                      <img 
+                        src="/ml-cert.png" 
+                        alt="Machine Learning Specialization Certificate" 
+                        className="w-full rounded-lg shadow-lg"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
